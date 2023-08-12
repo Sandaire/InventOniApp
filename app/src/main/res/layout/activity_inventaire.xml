@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inventaire">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#00008577"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            app:title="Inventaire" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="332dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="52dp"
+            android:ems="10"
+            android:inputType="date"
+            android:text="Enter Date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="332dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="52dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Carte Recu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="40dp"
+            android:text="Carte Non-Scanne"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="52dp"
+            android:text="Carte Re-Use"
+            app:layout_constraintEnd_toStartOf="@+id/checkBox2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="332dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="52dp"
+            android:text="Valider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+
+        <EditText
+            android:id="@+id/editTextText4"
+            android:layout_width="332dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="52dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Remarque"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
